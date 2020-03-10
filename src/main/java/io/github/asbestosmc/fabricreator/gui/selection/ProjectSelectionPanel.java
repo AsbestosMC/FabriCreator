@@ -7,7 +7,7 @@ import java.io.File;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Consumer;
 
-public class ProjectSelectionPanel extends JFrame {
+public class ProjectSelectionPanel extends JPanel {
 
 	public ProjectSelectionPanel(Consumer<File> confirmationActionRunnable) {
 		//construct components
