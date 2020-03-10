@@ -14,10 +14,15 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    maven {
+        name = "inventitive-repo"
+        url = "https://repo.inventivetalent.org/content/groups/public/"
+    }
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "org.inventivetalent:nbt-lib:1.1.0-SNAPSHOT"
 }
 
 

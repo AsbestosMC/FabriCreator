@@ -41,7 +41,7 @@ public class ProjectSelectionPanel extends JPanel {
 				confirmationActionRunnable.accept(file);
 			} else {
 				confirm.setBorder(BorderFactory.createLineBorder(Color.GREEN));
-				JOptionPane.showConfirmDialog(null, "click \"ok\" again to create a new project");
+				JOptionPane.showMessageDialog(null, "click \"ok\" again to create a new project");
 				createNew.set(true); // attempt to create new file
 			}
 		});

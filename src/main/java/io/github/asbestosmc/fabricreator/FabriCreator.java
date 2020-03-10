@@ -1,9 +1,11 @@
 package io.github.asbestosmc.fabricreator;
 
 import io.github.asbestosmc.fabricreator.gui.selection.ProjectSelectionPanel;
+import org.inventivetalent.nbt.stream.NBTInputStream;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.WindowConstants;
-import java.io.File;
+import java.io.*;
 
 public class FabriCreator {
 	public static void main(String[] args) throws InterruptedException {
@@ -22,6 +24,17 @@ public class FabriCreator {
 	}
 
 	public static void initProject(File file) {
+		File setting = new File(file, "fabricreator_metadata.nbt");
+
+		try (NBTInputStream input = new NBTInputStream(new FileInputStream(setting))) {
+
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "No.");
+			e.printStackTrace();
+		}
+	}
+
+	public static void createMeta() {
 
 	}
 }
