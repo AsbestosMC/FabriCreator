@@ -1,0 +1,13 @@
+IExtensibleEnum
+Menu
+Container
+Transformer
+IAbstractMortadaKiller0FactoryContainerFunction
+Material
+EnchantmentTarget
+Unsafe
+Instrumentation
+Bukkit
+DataFixerUpper
+Either
+UDP
